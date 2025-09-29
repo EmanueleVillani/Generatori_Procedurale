@@ -12,7 +12,7 @@ public class TileManager : MonoBehaviour {
     int gridSize = 10;
     int tileSize = 100;
 
-    void Start() {
+    void Awake() {
         cityGrid = new Tile[gridSize, gridSize];
         GenerateCity();
         CheckAdjacentTiles();
